@@ -1,73 +1,33 @@
-<template>
-  <div class="container">
-    <div>
-      <logo />
-      <h1 class="title">
-        danslebonsens
-      </h1>
-      <h2 class="subtitle">
-        blog social
-      </h2>
-      <div class="links">
-        <a href="https://nuxtjs.org/" target="_blank" class="button--green">
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
-    </div>
-  </div>
+<template lang="pug">
+section
+  h3 BIENVENUE!
+  article
+    p Ce site a pour vocation de guider les visiteurs dans leur quête visant à:
+    ul
+      li approfondir des connaissances,
+      li satisfaire leur curiosité,
+      li rechercher des liens,
+      li etc.
+    p
+      | Plusieurs rubriques éducatives sont disponibles et contiennent textes, médias et liens.
+      br
+      | Vous y trouverez:
+    ul
+      li
+        | les principes relatifs aux civilités avec les conduites à  tenir (transports, secours, savoir vivre),
+      li l’éducation (scolaire, parentale, professionnelle),
+      li l’informatique,
+      li les sciences,
+      li les orientations professionnelles.
+    p
+      | En clair il s’agit d’un supermarché de l’information. Des liens sont disponibles ci-dessous pour vous permettre de me faire part de vos remarques et suggestions, lesquelles sont vivement encouragées! En effet l’enrichissement d’un site provient toujours d’un travail en communauté.
+    p Sur ce assez de blabla, place à l’info. Car le savoir est aussi un devoir
+  aside
+
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
-
-export default {
-  components: {
-    Logo
-  }
-}
+export default {}
 </script>
 
-<style>
-/* Sample `apply` at-rules with Tailwind CSS
-.container {
-  @apply min-h-screen flex justify-center items-center text-center mx-auto;
-}
-*/
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
-}
-</style>
+<style scoped></style>
