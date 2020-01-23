@@ -1,13 +1,13 @@
 <template lang="pug">
 div
-  nav.flex.justify-betweeen
-    a.brand.home(href='../index.html') fabezio.com
-    BaseDashboard.mx-3
-    a.form(href='../form.html') inscription/connexion
+  nav.flex.bg-green-500.p-1.text-white
+    nuxt-link.justify-start.brand.home(to='/') DANS LE BON SENS
+    BaseDashboard.justify-start.btn.rounded.mx-3
+    a.justify-end.form(href='../form.html') inscription/connexion
 
-  h1 DANS LE BON SENS
-  br
-  em Savoir c'est Devoir
+  h1.text-center.center-items DANS LE BON SENS
+    br
+    em Savoir c'est Devoir
 
 
 </template>
