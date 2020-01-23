@@ -1,7 +1,8 @@
-<template>
-  <div>
-    <nuxt />
-  </div>
+<template lang="pug">
+div
+  BaseHeader
+  nuxt.container
+  BaseFooter
 </template>
 
 <style>
