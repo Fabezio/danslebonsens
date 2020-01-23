@@ -8,7 +8,9 @@ div
 <style>
 body {
   background: skyblue;
+  margin: 0;
 }
+/*
 * {
   break-before: auto;
   break-after: auto;
@@ -20,19 +22,11 @@ body {
   -webkit-break-after: auto;
   -webkit-break-inside: avoid-column;
 }
+*/
 
 /*entete
 		background: teal;
 */
-header {
-  height: 150px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  text-align: center;
-  margin: 0.2em 0.4em;
-  border-radius: 10px;
-}
 
 h1,
 h2,
@@ -48,39 +42,7 @@ h3 {
   text-decoration: underline;
 }
 
-.home {
-  list-style-type: none;
-  padding: 0.2em 0.4em;
-  border-radius: 10px;
-  border: medium black ridge;
-  width: 6em;
-}
-
-.home a {
-  text-decoration: none;
-}
-
-.form {
-  text-align: center;
-  list-style-type: none;
-  padding: 0.2em 0.4em;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  border-radius: 10px;
-  border: medium black ridge;
-  width: 13em;
-  text-decoration: none;
-  background: deepskyblue;
-
-  color: black;
-  text-shadow: 0px 0px 3px white, 0 0 5px grey;
-}
-
-.form a {
-}
-
-/* bloc volets: menu, articles, a-side*/
+/* bloc volets: articles, a-side*/
 .volets {
   display: flex;
   flex-direction: row;
@@ -88,40 +50,13 @@ h3 {
   margin: 0.25em;
 }
 
-.menu,
-section,
-footer {
+section {
   padding: 0% 0.25em;
   margin: 0% 0.25em;
 }
 
-nav {
-  margin: 0px 0.5em 0px auto;
-  flex-direction: column;
-  justify-content: flex-start;
-  text-align: center;
-  list-style: none inside;
-  word-break: auto;
-  text-shadow: 0px 0px 3px white, 0 0 5px grey;
-  background: rgba(255, 255, 255, 0.15);
-}
-
 li {
   padding-bottom: 4px;
-}
-
-.menu {
-  color: black;
-  display: block;
-  width: 8em;
-  padding: 0.3em;
-  text-decoration: none;
-  text-overflow: auto;
-  /*
-		background: teal;
-		border: medium black outset;
-		border-radius: 6px;
-		*/
 }
 
 ul li {
@@ -214,17 +149,16 @@ article {
   -moz-column-gap: 2em;
 }
 
-a,
-.form {
+a {
   cursor: hand;
 }
-a:hover,
-footer li:hover {
+a:hover {
+  /*
   text-shadow: 0 0 5px lime, 0 0 7px white;
   -webkit-transform: rotate(180deg) 1s;
   transition: transform 3.5s ease-out;
   transform: rotateX(-3600deg) skew(0deg, 0deg) translate(0px, 0em) scale(1.25);
-  /*
+
 		animation: heartbeat 0.7s;
 	}
 		@keyframes heartbeat {
@@ -238,42 +172,12 @@ footer li:hover {
 			100%{}
 		*/
 }
-.form:hover {
-  transition: transform 3.5s ease-out;
-  transform: rotateX(-3600deg) skew(0deg, 0deg) translate(0px, 0em) scale(1);
-}
 
-a:focus,
-footer li:focus {
+a:focus {
   transition: transform 5s ease;
   transform: rotateX(0deg) skew(0deg, 0deg) translate(0px, 0em) scale(0.01)
     alternate;
 }
 
 /*pied de page*/
-footer {
-  background: lightgrey;
-
-  margin: 0% auto;
-  vertical-align: bottom;
-  border: medium black ridge;
-  border-radius: 6px;
-}
-
-footer ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  vertical-align: bottom;
-}
-
-footer ul li {
-  list-style-type: none;
-}
-
-footer ul li a {
-  color: black;
-  text-decoration: none;
-  text-shadow: 0px 0px 4px white;
-}
 </style>
